@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as StayRouteImport } from './routes/stay'
 import { Route as ExperiencesRouteImport } from './routes/experiences'
+import { Route as EventsRouteImport } from './routes/events'
 import { Route as DiningRouteImport } from './routes/dining'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -24,6 +25,11 @@ const StayRoute = StayRouteImport.update({
 const ExperiencesRoute = ExperiencesRouteImport.update({
   id: '/experiences',
   path: '/experiences',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DiningRoute = DiningRouteImport.update({
@@ -52,6 +58,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/dining': typeof DiningRoute
+  '/events': typeof EventsRoute
   '/experiences': typeof ExperiencesRoute
   '/stay': typeof StayRoute
 }
@@ -60,6 +67,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/dining': typeof DiningRoute
+  '/events': typeof EventsRoute
   '/experiences': typeof ExperiencesRoute
   '/stay': typeof StayRoute
 }
@@ -69,20 +77,36 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/dining': typeof DiningRoute
+  '/events': typeof EventsRoute
   '/experiences': typeof ExperiencesRoute
   '/stay': typeof StayRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact' | '/dining' | '/experiences' | '/stay'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/dining'
+    | '/events'
+    | '/experiences'
+    | '/stay'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/dining' | '/experiences' | '/stay'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/dining'
+    | '/events'
+    | '/experiences'
+    | '/stay'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
     | '/dining'
+    | '/events'
     | '/experiences'
     | '/stay'
   fileRoutesById: FileRoutesById
@@ -92,6 +116,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   DiningRoute: typeof DiningRoute
+  EventsRoute: typeof EventsRoute
   ExperiencesRoute: typeof ExperiencesRoute
   StayRoute: typeof StayRoute
 }
@@ -110,6 +135,13 @@ declare module '@tanstack/react-router' {
       path: '/experiences'
       fullPath: '/experiences'
       preLoaderRoute: typeof ExperiencesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dining': {
@@ -148,19 +180,10 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   DiningRoute: DiningRoute,
+  EventsRoute: EventsRoute,
   ExperiencesRoute: ExperiencesRoute,
   StayRoute: StayRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

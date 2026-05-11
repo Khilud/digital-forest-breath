@@ -7,7 +7,7 @@ export const Route = createFileRoute("/experiences")({
   head: () => ({
     meta: [
       { title: "Experiences — Borgo Musolino" },
-      { name: "description", content: "Forest bathing, trekking, cooking classes, wine tasting, wellness and more — curated experiences in the heart of Aspromonte." },
+      { name: "description", content: "Forest bathing, holistic rituals, trekking on the Peloritani, cooking classes, Faro DOC wine tasting and forest wellness — curated experiences at Borgo Musolino, Messina." },
       { property: "og:title", content: "Experiences — Borgo Musolino" },
       { property: "og:description", content: "Curated forest, table and wellness experiences." },
       { property: "og:image", content: expForest },

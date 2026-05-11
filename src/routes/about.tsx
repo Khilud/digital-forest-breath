@@ -27,13 +27,20 @@ function AboutPage() {
           <h1 className="font-serif text-5xl md:text-7xl">The breath <span className="font-script text-accent">of</span> the forest</h1>
         </div>
       </section>
-      <div className="mx-auto max-w-3xl px-6 py-24">
+      <div className="mx-auto max-w-3xl px-6 py-24 space-y-8">
+        <p className="text-lg text-muted-foreground leading-relaxed font-light">
+          Imagine being surrounded by 50 hectares of woodland and farmland, immersed in the
+          history and nature of Sicily. Borgo Musolino — a former noble Sicilian fiefdom
+          dating back to the 16th century — still enchants today with its pristine beauty.
+          At the heart of the estate, a charming period residence has been carefully
+          restored into a restaurant, guest rooms, apartments and suites, with the
+          breathtaking Aeolian Islands on the horizon.
+        </p>
         <p className="text-lg text-muted-foreground leading-relaxed font-light">
           <em className="text-accent">Digital Forest Breath</em> is our quiet manifesto:
-          a reciprocity between our breath and the breath of the trees. Through
-          slow rituals, careful hospitality and immersive experiences, we make
-          visible what is usually invisible — the living web in which we are
-          embedded. Borgo Musolino is the place where this exchange becomes ritual.
+          a reciprocity between our breath and the breath of the trees. The Forest
+          Country Experience is the perfect place for nature lovers seeking experiential
+          tourism that regenerates body and soul.
         </p>
       </div>
     </SiteLayout>

@@ -8,6 +8,7 @@ const nav = [
   { to: "/experiences", label: "Experiences" },
   { to: "/stay", label: "Stay" },
   { to: "/dining", label: "Dining" },
+  { to: "/events", label: "Events" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -33,12 +34,25 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center" aria-label="Borgo Musolino — Home">
+        <Link to="/" className="flex items-center gap-3" aria-label="Borgo Musolino — Home">
           <img
             src={logo}
-            alt="Borgo Musolino — Forest Country Experience"
-            className={`transition-all duration-500 ${scrolled || open ? "h-12" : "h-16 md:h-20"} w-auto`}
+            alt=""
+            aria-hidden="true"
+            className={`transition-all duration-500 ${scrolled || open ? "h-14" : "h-20 md:h-24"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
           />
+          <span
+            className={`hidden sm:flex flex-col leading-none transition-all duration-500 ${
+              scrolled || open ? "scale-95" : ""
+            }`}
+          >
+            <span className="font-serif font-bold tracking-[0.18em] text-accent text-xl md:text-3xl uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)]">
+              Borgo Musolino
+            </span>
+            <span className="eyebrow text-white/80 mt-1 text-[0.6rem] md:text-[0.65rem]">
+              Forest Country Experience
+            </span>
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">

@@ -12,82 +12,70 @@ export type Category = {
   items: Experience[];
 };
 
-const placeholder = "Info coming soon.";
-
 export const categories: Category[] = [
   {
     key: "forest-bathing",
     title: "Forest Bathing",
     intro:
-      "Slow, sensorial immersion in the living forest — a practice of presence guided by breath and silence.",
+      "Immerse yourself in the silence of Borgo Musolino's ancient woods. Guided by experts, deep breathing among oaks and holm oaks becomes therapy — pure air rich in monoterpenes regenerates the body and quiets the mind.",
     items: [
-      { slug: "forest-bathing-classic", name: "Forest Bathing Classic", duration: "2h", description: "A gentle introduction to Shinrin-Yoku among ancient trees." },
-      { slug: "forest-bathing-intensive", name: "Forest Bathing Intensive", duration: "3h", description: "Experience a deeper immersion in the forest's energy through breath and awareness." },
-      { slug: "forest-bathing-sunrise", name: "Sunrise Forest Bathing", duration: "2h", description: placeholder },
+      { slug: "forest-bathing", name: "Forest Bathing Experience", duration: "2h", description: "A guided Shinrin-Yoku ritual through the ancient oaks and holm oaks of the Borgo." },
     ],
   },
   {
-    key: "trekking",
+    key: "forest-holistic",
+    title: "Forest Holistic",
+    intro:
+      "In the Hazelnut Park and at Biolake Gibbiuni, holistic practices — yoga, meditation, tai chi and aromatherapy — are offered amid birdsong and oligomineral waters.",
+    items: [
+      { slug: "yoga-meditation", name: "Yoga & Meditation in the Woods", duration: "1h30", description: "Practice surrounded by silence, water and the canopy of the Hazelnut Park." },
+      { slug: "biolake-ritual", name: "Biolake Gibbiuni Ritual", duration: "2h", description: "Sunbathing, massage and oligomineral immersion at our pristine biolake." },
+    ],
+  },
+  {
+    key: "forest-sea-mountains",
+    title: "Forest, Sea & Mountains",
+    intro:
+      "A unique experience pairing Sicilian woodland with the Tyrrhenian sea — chestnut groves at sunrise, fine-sand beaches by day, the Aeolian Islands on the horizon.",
+    items: [
+      { slug: "sea-and-mountains-day", name: "Sea & Mountains Day", duration: "Full day", description: "From the chestnut canopy to the Tyrrhenian shore — a curated day across two landscapes." },
+    ],
+  },
+  {
+    key: "forest-trekking",
     title: "Forest Trekking",
-    intro: "Guided walks through hidden paths, springs and panoramic ridges of Aspromonte.",
+    intro:
+      "Guided treks along the secret paths of the Peloritani Mountains, with sweeping views of the 'Two Seas' — the Tyrrhenian and the Ionian.",
     items: [
-      { slug: "trek-easy", name: "Easy Trek", duration: "3h", description: placeholder },
-      { slug: "trek-full-day", name: "Full Day Trek", duration: "6h", description: placeholder },
+      { slug: "peloritani-trek", name: "Peloritani Trek", duration: "Half day", description: "Follow expert nature guides through oaks and holm oaks to the panoramic ridges." },
     ],
   },
   {
-    key: "cooking",
-    title: "Cooking Classes",
-    intro: "Hands-on Calabrian tradition with our chef — from foraged herbs to wood-fired bread.",
+    key: "forest-wellness",
+    title: "Forest Wellness",
+    intro:
+      "An open-air sanctuary in the heart of the woods: outdoor gym, recirculating spring-water pools, foot Kneipp path, solarium and massages beneath majestic trees.",
     items: [
-      { slug: "pasta-class", name: "Fresh Pasta Class", duration: "3h", description: placeholder },
-      { slug: "bread-class", name: "Wood-Fired Bread", duration: "4h", description: placeholder },
-      { slug: "menu-class", name: "Full Menu Experience", duration: "5h", description: placeholder },
+      { slug: "kneipp-path", name: "Kneipp Path & Spring Pools", duration: "2h", description: "Restorative immersion in pure spring water and the foot Kneipp circuit." },
+      { slug: "forest-massage", name: "Forest Ritual Massage", duration: "60min", description: "A regenerating massage in the shade of centuries-old trees." },
     ],
   },
   {
-    key: "wine",
+    key: "cooking-class",
+    title: "Cooking Class",
+    intro:
+      "At 'Boschetto Cooking' our chefs share the secrets of Sicilian cuisine — using produce from the Borgo's gardens, eggs from the Pollaio and bread of ancient Tumminia grain.",
+    items: [
+      { slug: "sicilian-cooking", name: "Sicilian Cooking Experience", duration: "Half day", description: "Hands-on class ending with the meal you prepared, paired with local wines." },
+    ],
+  },
+  {
+    key: "wine-tasting",
     title: "Wine Tasting",
-    intro: "Indigenous Calabrian varietals tasted in vineyard, cellar and forest clearing.",
+    intro:
+      "Discover Faro DOC — Sicily's only DOC wine, born in the Peloritani — tasted in the Serra degli Aromi, in the Boschetto, or by the Biolake Gibbiuni overlooking the Aeolians.",
     items: [
-      { slug: "tasting-classic", name: "Classic Tasting", duration: "1h30", description: placeholder },
-      { slug: "tasting-premium", name: "Premium Tasting", duration: "2h", description: placeholder },
-    ],
-  },
-  {
-    key: "wellness",
-    title: "Wellness",
-    intro: "Sauna, cedar tubs, massage rituals — restoration drawn from the forest.",
-    items: [
-      { slug: "spa-access", name: "Spa Access", duration: "2h", description: placeholder },
-      { slug: "forest-massage", name: "Forest Ritual Massage", duration: "60min", description: placeholder },
-      { slug: "couples-spa", name: "Couples Spa Ritual", duration: "2h", description: placeholder },
-    ],
-  },
-  {
-    key: "borgo",
-    title: "A Day at the Borgo",
-    intro: "Curated full-day journeys through the village and its surrounding wild.",
-    items: [
-      { slug: "day-at-borgo", name: "A Day at the Borgo", duration: "8h", description: placeholder },
-    ],
-  },
-  {
-    key: "sunset",
-    title: "Borgo at Sunset",
-    intro: "An evening of golden light, aperitivo and quiet music among the stones.",
-    items: [
-      { slug: "sunset-aperitivo", name: "Sunset Aperitivo", duration: "2h", description: placeholder },
-      { slug: "sunset-dinner", name: "Sunset Dinner", duration: "3h", description: placeholder },
-    ],
-  },
-  {
-    key: "excursions",
-    title: "Excursions",
-    intro: "Off-borgo adventures into Aspromonte and the Ionian coast.",
-    items: [
-      { slug: "aspromonte-jeep", name: "Aspromonte Jeep Tour", duration: "5h", description: placeholder },
-      { slug: "coast-day", name: "Ionian Coast Day", duration: "8h", description: placeholder },
+      { slug: "faro-doc-tasting", name: "Faro DOC Exclusive Tasting", duration: "2h", description: "An exclusive selection from the most prestigious Faro DOC wineries." },
     ],
   },
 ];
