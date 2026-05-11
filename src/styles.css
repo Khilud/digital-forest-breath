@@ -85,6 +85,10 @@
   --ring: oklch(0.72 0.12 80);
   --gold: oklch(0.72 0.12 80);
   --forest-deep: oklch(0.18 0.03 150);
+  --forest-mid: oklch(0.32 0.05 150);
+  --gold-deep: oklch(0.62 0.13 75);
+  --gradient-forest: linear-gradient(160deg, oklch(0.22 0.04 150) 0%, oklch(0.32 0.05 150) 100%);
+  --gradient-gold: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
   --gradient-overlay: linear-gradient(180deg, transparent 0%, oklch(0.18 0.03 150 / 0.55) 70%, oklch(0.12 0.02 150 / 0.85) 100%);
   --shadow-elegant: 0 30px 80px -30px oklch(0.18 0.03 150 / 0.35);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -154,6 +158,14 @@
     font-weight: 400;
     letter-spacing: -0.01em;
   }
+  .font-display {
+    font-family: 'Cinzel', 'Trajan Pro', 'Cormorant Garamond', serif;
+    letter-spacing: 0.08em;
+  }
+  .font-script {
+    font-family: 'Pinyon Script', 'Cormorant Garamond', cursive;
+    font-style: italic;
+  }
 }
 
 @layer utilities {
@@ -169,7 +181,44 @@
     width: 60px;
     height: 1px;
     background: var(--gold);
+    position: relative;
   }
+  .gold-line::before,
+  .gold-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background: var(--gold);
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .gold-line::before { left: -8px; }
+  .gold-line::after  { right: -8px; }
+  .text-gold { color: var(--gold); }
+  .bg-forest { background: var(--gradient-forest); }
+  .border-gold { border-color: var(--gold); }
+  @keyframes kenburns {
+    0%   { transform: scale(1) translate(0,0); }
+    100% { transform: scale(1.12) translate(-1.5%, -1.5%); }
+  }
+  .kenburns { animation: kenburns 18s ease-in-out infinite alternate; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fadeUp 1.2s ease-out both; }
+  .fade-up-delay-1 { animation: fadeUp 1.2s ease-out 0.2s both; }
+  .fade-up-delay-2 { animation: fadeUp 1.2s ease-out 0.4s both; }
+  .fade-up-delay-3 { animation: fadeUp 1.2s ease-out 0.6s both; }
+  .gold-underline {
+    background-image: linear-gradient(var(--gold), var(--gold));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 1px;
+    transition: background-size 0.5s ease;
+  }
+  .gold-underline:hover { background-size: 100% 1px; }
   .hover-zoom img {
     transition: transform 1.2s ease;
   }
