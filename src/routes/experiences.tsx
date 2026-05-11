@@ -43,22 +43,19 @@ function ExperiencesPage() {
                   key={item.slug}
                   className="py-7 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 md:items-center"
                 >
-                  <div className="md:col-span-6">
+                  <div className="md:col-span-7">
                     <h3 className="font-serif text-2xl">{item.name}</h3>
                     <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{item.description}</p>
                   </div>
-                  <div className="md:col-span-2 text-sm text-muted-foreground tracking-wide">
+                  <div className="md:col-span-3 text-sm text-muted-foreground tracking-wide">
                     {item.duration}
-                  </div>
-                  <div className="md:col-span-2 font-serif text-xl text-foreground">
-                    {item.priceFrom} €
                   </div>
                   <div className="md:col-span-2 md:text-right">
                     <Link
                       to="/contact"
-                      className="inline-block text-xs tracking-[0.25em] uppercase border border-foreground px-5 py-3 hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors"
+                      className="inline-block text-xs tracking-[0.25em] uppercase border border-primary text-primary px-5 py-3 hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors"
                     >
-                      Book Now
+                      Inquire
                     </Link>
                   </div>
                 </li>
