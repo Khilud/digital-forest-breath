@@ -7,9 +7,9 @@ export const Route = createFileRoute("/stay")({
   head: () => ({
     meta: [
       { title: "Stay — Borgo Musolino" },
-      { name: "description", content: "Stone suites and forest rooms in an ancient Calabrian borgo, restored with quiet luxury." },
+      { name: "description", content: "Sea-view rooms, junior suites with terrace, forest-view rooms, garden suites and exclusive lodges in an ancient Sicilian borgo near Messina." },
       { property: "og:title", content: "Stay — Borgo Musolino" },
-      { property: "og:description", content: "Stone suites and forest rooms in an ancient Calabrian borgo." },
+      { property: "og:description", content: "Hospitality measured in breaths, not stars — between the Tyrrhenian and the Aeolian Islands." },
       { property: "og:image", content: roomSuite },
     ],
   }),

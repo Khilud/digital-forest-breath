@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Borgo Musolino — Forest Experience" },
-      { name: "description", content: "Reconnect with nature through wellness and taste at Borgo Musolino, an immersive forest sanctuary in Calabria." },
+      { name: "description", content: "Reconnect with nature through wellness and taste at Borgo Musolino, an immersive forest sanctuary in Messina, Sicily." },
       { property: "og:title", content: "Borgo Musolino — Forest Experience" },
       { property: "og:description", content: "Reconnect with nature through wellness and taste." },
       { property: "og:type", content: "website" },

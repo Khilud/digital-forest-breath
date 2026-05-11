@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Reconnect with nature through wellness and taste. An immersive forest sanctuary in Calabria — hospitality, spa, dining and curated experiences.",
+          "Reconnect with nature through wellness and taste. An immersive Sicilian forest sanctuary in Messina — hospitality, spa, dining and curated experiences.",
       },
       { property: "og:title", content: "Borgo Musolino — Forest Experience" },
       { property: "og:description", content: "Reconnect with nature through wellness and taste." },
@@ -29,8 +29,8 @@ export const Route = createFileRoute("/")({
 
 const previewExperiences = [
   { img: expForest, title: "Forest Bathing", to: "/experiences" as const, blurb: "Slow immersion guided by breath and silence." },
-  { img: expCooking, title: "Cooking Classes", to: "/experiences" as const, blurb: "Calabrian tradition, hand to flame." },
-  { img: expWine, title: "Wine Tasting", to: "/experiences" as const, blurb: "Indigenous varietals among the vines." },
+  { img: expCooking, title: "Cooking Class", to: "/experiences" as const, blurb: "Sicilian tradition, from garden to flame." },
+  { img: expWine, title: "Wine Tasting", to: "/experiences" as const, blurb: "Faro DOC and indigenous Sicilian wines." },
   { img: expWellness, title: "Wellness", to: "/experiences" as const, blurb: "Cedar tubs, sauna, forest rituals." },
 ];
 
@@ -57,7 +57,7 @@ function Index() {
         <div className="absolute bottom-20 right-8 hidden md:block w-16 h-16 border-r border-b border-accent/60" />
 
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 text-white">
-          <p className="eyebrow text-accent fade-up">Calabria · Italia</p>
+          <p className="eyebrow text-accent fade-up">Messina · Sicilia · Italia</p>
           <span className="gold-line my-6 fade-up-delay-1" />
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl max-w-4xl leading-[1.02] fade-up-delay-1">
             <span className="font-script text-accent text-3xl md:text-5xl block mb-2">The breath</span>
@@ -204,6 +204,28 @@ function Index() {
             <img src={sunset} alt="Sunset over the valley" loading="lazy" className="w-full aspect-[4/3] object-cover" />
             <div className="absolute -top-4 -left-4 hidden md:block w-32 h-32 border-l-2 border-t-2 border-accent" />
           </div>
+        </div>
+      </section>
+
+      {/* Events & Weddings */}
+      <section className="relative py-40 px-6 text-white overflow-hidden">
+        <img src={sunset} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover kenburns" />
+        <div className="absolute inset-0 bg-[oklch(0.18_0.03_150)]/75" />
+        <div className="relative z-10 mx-auto max-w-3xl text-center">
+          <p className="eyebrow text-accent">Events</p>
+          <span className="gold-line my-6" />
+          <h2 className="font-serif text-4xl md:text-6xl">
+            We host
+            <span className="font-script text-accent block text-3xl md:text-5xl my-2">exclusive</span>
+            weddings
+          </h2>
+          <p className="mt-6 text-white/80 font-light leading-relaxed text-lg">
+            A 16th-century Sicilian fiefdom, 50 hectares of woodland and the Aeolian Islands on the horizon —
+            an unrepeatable setting for weddings and private celebrations.
+          </p>
+          <Link to="/events" className="mt-10 inline-block border border-accent text-accent px-8 py-4 text-xs tracking-[0.3em] uppercase hover:bg-accent hover:text-[oklch(0.18_0.03_150)] transition-colors">
+            Discover Events
+          </Link>
         </div>
       </section>
     </SiteLayout>

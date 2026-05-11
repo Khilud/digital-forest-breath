@@ -12,8 +12,6 @@ export type Category = {
   items: Experience[];
 };
 
-const placeholder = "Info coming soon.";
-
 export const categories: Category[] = [
   {
     key: "forest-bathing",

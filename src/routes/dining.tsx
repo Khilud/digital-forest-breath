@@ -29,9 +29,10 @@ function DiningPage() {
       </section>
       <div className="mx-auto max-w-3xl px-6 py-24 text-center">
         <p className="text-lg text-muted-foreground leading-relaxed font-light">
-          Our seasonal menus are drawn from the chestnut woodland, hillside vegetable
-          gardens and Ionian coast. Foraged herbs, ancestral grains, hand-pressed oils
-          and a cellar of indigenous Calabrian wines.
+          In Borgo Musolino food isn't served — it is lived. Ancient Sicilian grain bread,
+          warm ricotta, honey from our bees, eggs from our chicken coop, vegetables picked
+          in the greenhouse, paired with Faro DOC, Etna Bianco, Nero d'Avola and Passito di
+          Pantelleria. A cuisine that listens to the forest, the season and the sea.
         </p>
       </div>
     </SiteLayout>
