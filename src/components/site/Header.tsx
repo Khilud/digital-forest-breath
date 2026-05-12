@@ -38,23 +38,8 @@ export function Header() {
           <img
             src={logo}
             alt="Borgo Musolino"
-            className={`transition-all duration-500 ${scrolled || open ? "h-14" : "h-20 md:h-24"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
+            className={`transition-all duration-500 ${scrolled || open ? "h-20" : "h-28 md:h-36"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
           />
-          <span
-            className={`hidden sm:flex flex-col leading-none transition-all duration-500 ${
-              scrolled || open ? "scale-95" : ""
-            }`}
-          >
-            <span
-              className="font-display text-accent uppercase text-2xl md:text-4xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]"
-              style={{ fontWeight: 900, letterSpacing: "0.12em" }}
-            >
-              Borgo
-            </span>
-            <span className="text-white/85 mt-2 tracking-[0.32em] uppercase text-[0.78rem] md:text-[0.9rem] font-light">
-              Forest Country Experience
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
