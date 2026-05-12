@@ -171,14 +171,14 @@
 @layer utilities {
   .eyebrow {
     font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.95rem;
     letter-spacing: 0.32em;
     text-transform: uppercase;
     font-weight: 500;
   }
   .gold-line {
     display: inline-block;
-    width: 60px;
+    width: 90px;
     height: 1px;
     background: var(--gold);
     position: relative;
