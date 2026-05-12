@@ -37,8 +37,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-3" aria-label="Borgo Musolino — Home">
           <img
             src={logo}
-            alt=""
-            aria-hidden="true"
+            alt="Borgo Musolino"
             className={`transition-all duration-500 ${scrolled || open ? "h-14" : "h-20 md:h-24"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
           />
           <span
@@ -46,10 +45,13 @@ export function Header() {
               scrolled || open ? "scale-95" : ""
             }`}
           >
-            <span className="font-serif font-bold tracking-[0.18em] text-accent text-xl md:text-3xl uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.55)]">
-              Borgo Musolino
+            <span
+              className="font-display text-accent uppercase text-2xl md:text-4xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.65)]"
+              style={{ fontWeight: 900, letterSpacing: "0.12em" }}
+            >
+              Borgo
             </span>
-            <span className="eyebrow text-white/80 mt-1 text-[0.6rem] md:text-[0.65rem]">
+            <span className="text-white/85 mt-2 tracking-[0.32em] uppercase text-[0.78rem] md:text-[0.9rem] font-light">
               Forest Country Experience
             </span>
           </span>
