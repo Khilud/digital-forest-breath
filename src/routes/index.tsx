@@ -207,27 +207,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Events & Weddings */}
-      <section className="relative py-40 px-6 text-white overflow-hidden">
-        <img src={sunset} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover kenburns" />
-        <div className="absolute inset-0 bg-[oklch(0.18_0.03_150)]/75" />
-        <div className="relative z-10 mx-auto max-w-3xl text-center">
-          <p className="eyebrow text-accent">Events</p>
-          <span className="gold-line my-6" />
-          <h2 className="font-serif text-4xl md:text-6xl">
-            We host
-            <span className="font-script text-accent block text-3xl md:text-5xl my-2">exclusive</span>
-            weddings
-          </h2>
-          <p className="mt-6 text-white/80 font-light leading-relaxed text-lg">
-            A 16th-century Sicilian fiefdom, 50 hectares of woodland and the Aeolian Islands on the horizon —
-            an unrepeatable setting for weddings and private celebrations.
-          </p>
-          <Link to="/events" className="mt-10 inline-block border border-accent text-accent px-8 py-4 text-xs tracking-[0.3em] uppercase hover:bg-accent hover:text-[oklch(0.18_0.03_150)] transition-colors">
-            Discover Events
-          </Link>
-        </div>
-      </section>
     </SiteLayout>
   );
 }
