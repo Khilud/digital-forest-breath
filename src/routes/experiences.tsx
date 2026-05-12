@@ -89,7 +89,7 @@ function ExperiencesPage() {
       {/* Active category */}
       <section className="bg-background py-20 md:py-28 px-6">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          <div className="lg:col-span-5 lg:sticky lg:top-[170px]">
+          <div className="lg:col-span-4 lg:sticky lg:top-[170px] max-w-sm mx-auto lg:mx-0">
             <div key={active.key} className="relative overflow-hidden aspect-[4/5] hover-zoom fade-up">
               <img src={activeImage} alt={active.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.18_0.03_150)]/70 via-transparent to-transparent" />
@@ -101,7 +101,7 @@ function ExperiencesPage() {
             </div>
           </div>
 
-          <div key={active.key + "-content"} className="lg:col-span-7 fade-up">
+          <div key={active.key + "-content"} className="lg:col-span-8 fade-up">
             <p className="eyebrow text-accent">
               0{categories.findIndex((c) => c.key === active.key) + 1} · Category
             </p>
@@ -111,7 +111,7 @@ function ExperiencesPage() {
               {active.intro}
             </p>
 
-            <ul className="mt-12 space-y-4">
+            <ul className="mt-12 space-y-6 pl-2 md:pl-4">
               {active.items.map((item, i) => (
                 <li
                   key={item.slug}
