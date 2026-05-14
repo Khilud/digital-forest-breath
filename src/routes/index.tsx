@@ -4,7 +4,6 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import heroForest from "@/assets/hero-forest.jpg";
 import expForest from "@/assets/exp-forest-bathing.jpg";
 import expCooking from "@/assets/exp-cooking.jpg";
-import expWine from "@/assets/exp-wine.jpg";
 import expWellness from "@/assets/exp-wellness.jpg";
 import expSeaMountain from "@/assets/sunset.jpg";
 import borgoAerial from "@/assets/borgo-aerial.jpg";
