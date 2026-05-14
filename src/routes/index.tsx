@@ -6,6 +6,7 @@ import expForest from "@/assets/exp-forest-bathing.jpg";
 import expCooking from "@/assets/exp-cooking.jpg";
 import expWine from "@/assets/exp-wine.jpg";
 import expWellness from "@/assets/exp-wellness.jpg";
+import expSeaMountain from "@/assets/sunset.jpg";
 import borgoAerial from "@/assets/borgo-aerial.jpg";
 import dining from "@/assets/dining.jpg";
 import sunset from "@/assets/sunset.jpg";
@@ -29,9 +30,9 @@ export const Route = createFileRoute("/")({
 
 const previewExperiences = [
   { img: expForest, title: "Forest Bathing", to: "/experiences" as const, blurb: "Slow immersion guided by breath and silence." },
-  { img: expCooking, title: "Cooking Class", to: "/experiences" as const, blurb: "Sicilian tradition, from garden to flame." },
-  { img: expWine, title: "Wine Tasting", to: "/experiences" as const, blurb: "Faro DOC and indigenous Sicilian wines." },
-  { img: expWellness, title: "Wellness", to: "/experiences" as const, blurb: "Cedar tubs, sauna, forest rituals." },
+  { img: expWellness, title: "Forest Trekking", to: "/experiences" as const, blurb: "Secret paths of the Peloritani between two seas." },
+  { img: expSeaMountain, title: "Forest & Sea", to: "/experiences" as const, blurb: "Chestnut canopy at dawn, Tyrrhenian shore by day." },
+  { img: expCooking, title: "Cooking", to: "/experiences" as const, blurb: "Sicilian tradition, from garden to flame." },
 ];
 
 function Index() {
