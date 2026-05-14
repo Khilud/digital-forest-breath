@@ -29,10 +29,9 @@ function DiningPage() {
       </section>
       <div className="mx-auto max-w-3xl px-6 py-24 text-center">
         <p className="text-lg text-muted-foreground leading-relaxed font-light">
-          In Borgo Musolino food isn't served — it is lived. Ancient Sicilian grain bread,
-          warm ricotta, honey from our bees, eggs from our chicken coop, vegetables picked
-          in the greenhouse, paired with Faro DOC, Etna Bianco, Nero d'Avola and Passito di
-          Pantelleria. A cuisine that listens to the forest, the season and the sea.
+          At Borgo Musolino food is lived. Garden vegetables, honey from our bees and
+          ancient Sicilian grains, paired with Etna and Faro wines — a cuisine that
+          listens to the forest and the sea.
         </p>
       </div>
 
@@ -42,18 +41,14 @@ function DiningPage() {
           {[
             {
               tag: "Indoor",
-              name: "La Sala del Borgo",
-              blurb:
-                "Inside the restored stone walls of the borgo — candlelight, linen and the warmth of a centuries-old hearth.",
+              blurb: "Restored stone walls, candlelight and a centuries-old hearth.",
             },
             {
               tag: "Outdoor",
-              name: "Boschetto Terrace",
-              blurb:
-                "Open-air tables under the chestnut canopy, a wood-fired steakhouse grill and the scent of resin in the air.",
+              blurb: "Open-air tables under the chestnut canopy, wood-fired grill.",
             },
           ].map((r) => (
-            <article key={r.name} className="border border-accent/30 p-10 bg-secondary/20 hover:border-accent transition-colors">
+            <article key={r.tag} className="border border-accent/30 p-10 bg-secondary/20 hover:border-accent transition-colors">
               <p className="eyebrow text-accent">{r.tag}</p>
               <span className="gold-line my-4 block" />
               <p className="mt-4 text-muted-foreground leading-relaxed font-light">{r.blurb}</p>
