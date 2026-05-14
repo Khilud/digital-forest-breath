@@ -38,7 +38,7 @@ export function Header() {
           <img
             src={logo}
             alt="Borgo Musolino"
-            className={`transition-all duration-500 ${scrolled || open ? "h-20" : "h-28 md:h-36"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
+            className={`transition-all duration-500 ${scrolled || open ? "h-14" : "h-20 md:h-24"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
           />
         </Link>
 

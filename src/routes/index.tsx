@@ -91,11 +91,10 @@ function Index() {
             <span className="block font-script text-accent text-3xl md:text-5xl mt-3">through wellness &amp; taste</span>
           </h2>
           <p className="mt-10 text-white/75 leading-relaxed text-lg font-light">
-            <em className="text-accent">Digital Forest Breath</em> — the reciprocity between our breath and the
-            breath of trees. At Borgo Musolino we make this exchange tangible: a place
-            where ancient stones, immense woodlands and refined Italian hospitality
-            invite you to remember you are not separate from nature, but embedded in
-            its quiet, living web.
+            <em className="text-accent">Digital Forest Breath</em> — the reciprocity between our
+            breath and the breath of trees. A place where ancient stones, immense
+            woodlands and refined Italian hospitality remind you that you are
+            embedded in nature's quiet, living web.
           </p>
         </div>
       </section>
