@@ -6,8 +6,8 @@ import logo from "@/assets/logo-borgo.png";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/experiences", label: "Experiences" },
-  { to: "/stay", label: "Stay" },
-  { to: "/dining", label: "Dining" },
+  { to: "/stay", label: "Rooms" },
+  { to: "/dining", label: "Dining & Bar" },
   { to: "/events", label: "Events" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
@@ -47,7 +47,7 @@ export function Header() {
             <Link
               key={item.to}
               to={item.to}
-              className="text-[0.78rem] tracking-[0.22em] uppercase text-white/85 hover:text-accent transition-colors"
+              className="text-[0.95rem] tracking-[0.22em] uppercase text-white/85 hover:text-accent transition-colors"
               activeProps={{ className: "!text-accent" }}
               activeOptions={{ exact: item.to === "/" }}
             >
@@ -56,14 +56,14 @@ export function Header() {
           ))}
           <button
             onClick={() => setLang((l) => (l === "EN" ? "IT" : "EN"))}
-            className="text-[0.7rem] tracking-[0.3em] text-white/70 hover:text-accent transition-colors"
+            className="text-[0.85rem] tracking-[0.3em] text-white/70 hover:text-accent transition-colors"
             aria-label="Toggle language"
           >
             {lang}
           </button>
           <Link
             to="/contact"
-            className="border border-accent text-accent px-5 py-2 text-[0.7rem] tracking-[0.3em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="border border-accent text-accent px-5 py-2 text-[0.85rem] tracking-[0.3em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors"
           >
             Book
           </Link>

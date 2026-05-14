@@ -35,6 +35,72 @@ function DiningPage() {
           Pantelleria. A cuisine that listens to the forest, the season and the sea.
         </p>
       </div>
+
+      {/* Two restaurants */}
+      <section className="px-6 pb-24">
+        <div className="mx-auto max-w-7xl grid md:grid-cols-2 gap-10">
+          {[
+            {
+              tag: "Indoor",
+              name: "La Sala del Borgo",
+              blurb:
+                "Inside the restored stone walls of the borgo — candlelight, linen and the warmth of a centuries-old hearth.",
+            },
+            {
+              tag: "Outdoor",
+              name: "Boschetto Terrace",
+              blurb:
+                "Open-air tables under the chestnut canopy, a wood-fired steakhouse grill and the scent of resin in the air.",
+            },
+          ].map((r) => (
+            <article key={r.name} className="border border-accent/30 p-10 bg-secondary/20 hover:border-accent transition-colors">
+              <p className="eyebrow text-accent">{r.tag}</p>
+              <span className="gold-line my-4 block" />
+              <h2 className="font-serif text-3xl md:text-4xl text-primary">{r.name}</h2>
+              <p className="mt-4 text-muted-foreground leading-relaxed font-light">{r.blurb}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Cuisines */}
+      <section className="bg-secondary/40 py-24 px-6">
+        <div className="mx-auto max-w-6xl text-center">
+          <p className="eyebrow text-accent">The Kitchens</p>
+          <span className="gold-line my-5 mx-auto" />
+          <h2 className="font-serif text-4xl md:text-5xl text-primary">
+            Three <span className="font-script text-accent">cuisines</span>, one forest
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 mt-14 text-left">
+            {[
+              {
+                name: "Sicilian Cuisine",
+                where: "Indoor · La Sala del Borgo",
+                blurb:
+                  "Pasta alla Norma, swordfish involtini, caponata and ancient Tumminia grain bread — the soul of the island.",
+              },
+              {
+                name: "Steakhouse",
+                where: "Outdoor · Boschetto Terrace",
+                blurb:
+                  "Aged cuts seared on the wood-fired grill, smoked under the open sky, served with foraged herbs.",
+              },
+              {
+                name: "Dinner at Sena",
+                where: "Indoor & Outdoor",
+                blurb:
+                  "A vegetable-forward tasting menu built each morning from the greenhouse harvest — fresh, light, alive.",
+              },
+            ].map((c) => (
+              <article key={c.name} className="bg-background p-8 border-t-2 border-accent hover-zoom">
+                <h3 className="font-serif text-2xl text-primary">{c.name}</h3>
+                <p className="text-[0.7rem] tracking-[0.3em] uppercase text-accent mt-2">{c.where}</p>
+                <p className="mt-4 text-sm text-muted-foreground leading-relaxed font-light">{c.blurb}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </SiteLayout>
   );
 }
