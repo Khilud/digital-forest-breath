@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import dining from "@/assets/dining.jpg";
+import anticaCucina from "@/assets/dining-antica-cucina.jpg";
 
 export const Route = createFileRoute("/dining")({
   head: () => ({
@@ -87,6 +88,30 @@ function DiningPage() {
                 <p className="mt-4 text-sm text-muted-foreground leading-relaxed font-light">{c.blurb}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Antica Cucina */}
+      <section className="px-6 py-24">
+        <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
+          <img
+            src={anticaCucina}
+            alt="Antica Cucina at Borgo Musolino — historic Sicilian kitchen with cartwheel and Moorish heads"
+            loading="lazy"
+            className="w-full h-auto object-cover shadow-lg"
+          />
+          <div>
+            <p className="eyebrow text-accent">Antica Cucina</p>
+            <span className="gold-line my-5 block" />
+            <h2 className="font-serif text-4xl md:text-5xl text-primary">
+              The <span className="font-script text-accent">ancient</span> kitchen
+            </h2>
+            <p className="mt-6 text-muted-foreground leading-relaxed font-light">
+              Beneath vaulted stone arches, framed by the Moorish heads of Sicilian
+              tradition and a centuries-old cartwheel, our Antica Cucina is where
+              every dish begins — slow, rooted and unmistakably of this land.
+            </p>
           </div>
         </div>
       </section>
