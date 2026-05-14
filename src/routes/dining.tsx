@@ -56,7 +56,6 @@ function DiningPage() {
             <article key={r.name} className="border border-accent/30 p-10 bg-secondary/20 hover:border-accent transition-colors">
               <p className="eyebrow text-accent">{r.tag}</p>
               <span className="gold-line my-4 block" />
-              <h2 className="font-serif text-3xl md:text-4xl text-primary">{r.name}</h2>
               <p className="mt-4 text-muted-foreground leading-relaxed font-light">{r.blurb}</p>
             </article>
           ))}
@@ -66,12 +65,7 @@ function DiningPage() {
       {/* Cuisines */}
       <section className="bg-secondary/40 py-24 px-6">
         <div className="mx-auto max-w-6xl text-center">
-          <p className="eyebrow text-accent">The Kitchens</p>
-          <span className="gold-line my-5 mx-auto" />
-          <h2 className="font-serif text-4xl md:text-5xl text-primary">
-            Three <span className="font-script text-accent">cuisines</span>, one forest
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mt-14 text-left">
+          <div className="grid md:grid-cols-3 gap-8 text-left">
             {[
               {
                 name: "Sicilian Cuisine",
