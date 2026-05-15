@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-borgo.png";
 
 const nav = [
-  { to: "/", label: "Home" },
   { to: "/experiences", label: "Experiences" },
   { to: "/stay", label: "Rooms" },
   { to: "/dining", label: "Dining & Bar" },
@@ -49,7 +48,6 @@ export function Header() {
               to={item.to}
               className="text-[0.95rem] tracking-[0.22em] uppercase text-white/85 hover:text-accent transition-colors"
               activeProps={{ className: "!text-accent" }}
-              activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
             </Link>
