@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-borgo.png";
 
 const nav = [
-  { to: "/", label: "Home" },
   { to: "/experiences", label: "Experiences" },
   { to: "/stay", label: "Rooms" },
   { to: "/dining", label: "Dining & Bar" },
