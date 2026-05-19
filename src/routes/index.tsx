@@ -59,8 +59,8 @@ function Index() {
           <p className="eyebrow text-accent fade-up">Messina · Sicilia · Italia</p>
           <span className="gold-line my-6 fade-up-delay-1" />
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl max-w-4xl leading-[1.02] fade-up-delay-1">
-            <span className="font-script text-accent text-3xl md:text-5xl block mb-2">The breath</span>
-            of the forest
+            <span className="font-script text-accent text-3xl md:text-5xl block mb-2">The breath of the</span>
+            Forest
           </h1>
           <p className="mt-8 max-w-xl text-base md:text-lg text-white/85 font-light fade-up-delay-2">
             An immersive sanctuary where wellness, taste and ancient woodland meet.

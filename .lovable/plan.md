@@ -1,9 +1,28 @@
-The current `src/assets/logo-borgo.png` has a fern leaf that's too tall — it spans the full height of the wordmark. In the reference screenshot, the leaf is roughly the height of just the "MUSOLINO" line (about 50–60% of the current leaf's height) and sits to the left of the wordmark, vertically centered.
+## Changes
 
-### Fix
-Use `imagegen--edit_image` on the existing `src/assets/logo-borgo.png` to:
-- Shrink the gold fern leaf so it matches the height of the "MUSOLINO" capitals (as in the reference)
-- Keep the leaf's exact shape, gold color, and left-side position
-- Leave everything else unchanged: "Borgo" script, "MUSOLINO" caps, gold rule + diamonds, "FOREST EXPERIENCE" tagline, all cream/ivory color, transparent background
+### 1. Header logo (`src/components/site/Header.tsx`)
 
-No code changes — only the asset is regenerated.
+- Shift logo slightly to the left by adding right padding/margin on the logo link (e.g. `ml-4 md:ml-6`).
+- Increase logo size: from `h-20 md:h-24` → `h-24 md:h-28` (scrolled state from `h-14` → `h-16`).
+- Keep the header container `max-w-7xl px-6 flex items-center justify-between` so nav stays right-aligned and vertically centered with the larger logo.
+
+### 2. Home hero headline (`src/routes/index.tsx`)
+
+Current:
+
+```
+[script small] The breath
+of the forest        ← big serif
+```
+
+New:
+
+```
+[script small] The breath of the
+Forest               ← big serif (only "Forest" stays big)
+```
+
+- "The breath of the" → rendered in the **same small script style/size** as the current "The breath" (font-script, accent color, text-3xl md:text-5xl).
+- "Forest" → rendered in the **same big serif style/size** as the current "of the forest" (font-serif, text-5xl md:text-7xl lg:text-8xl).
+
+No other content, colors, or layout changes.
