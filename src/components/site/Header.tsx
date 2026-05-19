@@ -33,11 +33,11 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3" aria-label="Borgo Musolino — Home">
+        <Link to="/" className="flex items-center gap-3 ml-4 md:ml-8" aria-label="Borgo Musolino — Home">
           <img
             src={logo}
             alt="Borgo Musolino"
-            className={`transition-all duration-500 ${scrolled || open ? "h-14" : "h-20 md:h-24"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
+            className={`transition-all duration-500 ${scrolled || open ? "h-16" : "h-24 md:h-28"} w-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]`}
           />
         </Link>
 
