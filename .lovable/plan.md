@@ -1,3 +1,16 @@
-Re-edit `src/assets/logo-borgo.png` to restore the original logo colors (gold/cream on transparent background as before), while keeping the recent text change — the tagline reads "FOREST RESORT EXPERIENCE", slightly larger and aligned to the width of "BORGO MUSOLINO".
+## Plan
 
-Will use `imagegen--edit_image` on the current logo with a prompt that explicitly preserves original colors and only re-asserts the tagline text/size/alignment. No code changes.
+1. Restore `src/assets/logo-borgo.png` to the original gold/cream palette while keeping the current approved edits:
+   - `FOREST RESORT EXPERIENCE`
+   - slightly larger tagline
+   - tagline alignment matching `BORGO MUSOLINO`
+
+2. Keep the logo shape, typography, spacing, and transparent background unchanged.
+
+3. Verify the updated asset inside the header so the on-page logo matches the restored original color.
+
+## Technical details
+
+- Update only the logo asset; no layout or header code changes unless verification shows the header styling is altering the appearance.
+- Preserve the current PNG path so the site continues using the same import without any code refactor.
+- Validate the final result visually against the current preview to confirm the darker gradient has been removed.
