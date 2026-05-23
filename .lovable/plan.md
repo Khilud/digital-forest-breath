@@ -1,5 +1,3 @@
-Increase the scrolled-state logo size in `src/components/site/Header.tsx`.
+Re-edit `src/assets/logo-borgo.png` to restore the original logo colors (gold/cream on transparent background as before), while keeping the recent text change — the tagline reads "FOREST RESORT EXPERIENCE", slightly larger and aligned to the width of "BORGO MUSOLINO".
 
-Change the image height class when `scrolled || open` from `h-16` to `h-20 md:h-24` so the logo stays prominent after scrolling, while the un-scrolled size (`h-24 md:h-28`) remains unchanged.
-
-No other changes.
+Will use `imagegen--edit_image` on the current logo with a prompt that explicitly preserves original colors and only re-asserts the tagline text/size/alignment. No code changes.
