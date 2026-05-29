@@ -57,7 +57,7 @@ function ExperiencesPage() {
             the forest
           </h1>
           <p className="mt-6 max-w-xl text-base md:text-lg text-white/85 font-light fade-up-delay-2">
-            Seven ways to spend a day at the borgo — in the chestnut woods, at the table, in the spa, on the trails toward the sea.
+            Seven ways to spend a day at the borgo — chestnut woods and Peloritani trails, the open-air spa, the kitchen garden, and Faro DOC poured with the Aeolian Islands on the horizon.
           </p>
         </div>
       </section>
