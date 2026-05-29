@@ -6,11 +6,10 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-20 grid md:grid-cols-4 gap-12">
         <div className="md:col-span-2">
           <h3 className="font-serif text-3xl text-white">Borgo Musolino</h3>
-          <p className="eyebrow mt-2 text-accent">Forest Experience</p>
+          <p className="eyebrow mt-2 text-accent">Forest Resort Experience</p>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-white/65">
-            Reconnect with nature through wellness and taste. An immersive
-            sanctuary where the breath of the forest meets refined Italian
-            hospitality.
+            A sixteenth-century Sicilian borgo above the Aeolian Islands —
+            rooms, spa, kitchen and fifty hectares of chestnut forest.
           </p>
         </div>
         <div>
@@ -36,7 +35,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row justify-between text-xs text-white/50">
           <span>© {new Date().getFullYear()} Borgo Musolino. All rights reserved.</span>
-          <span>Digital Forest Breath</span>
+          <span>Borgo Musolino · Forest Resort Experience</span>
         </div>
       </div>
     </footer>

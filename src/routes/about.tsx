@@ -6,9 +6,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Borgo Musolino" },
-      { name: "description", content: "The philosophy of Borgo Musolino — Digital Forest Breath, the reciprocity between human and forest." },
+      { name: "description", content: "The philosophy of Borgo Musolino — a Forest Resort Experience in a sixteenth-century Sicilian estate above the Aeolian Islands." },
       { property: "og:title", content: "About — Borgo Musolino" },
-      { property: "og:description", content: "The breath of the forest, made tangible." },
+      { property: "og:description", content: "A Forest Resort Experience in a sixteenth-century Sicilian estate." },
       { property: "og:image", content: borgoAerial },
     ],
   }),
@@ -37,10 +37,10 @@ function AboutPage() {
           breathtaking Aeolian Islands on the horizon.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed font-light">
-          <em className="text-accent">Digital Forest Breath</em> is our quiet manifesto:
-          a reciprocity between our breath and the breath of the trees. The Forest
-          Country Experience is the perfect place for nature lovers seeking experiential
-          tourism that regenerates body and soul.
+          The <em className="text-accent">Forest Resort Experience</em> is our way of
+          welcoming you: stone rooms restored by hand, chestnut woods that change with
+          the season, a kitchen built around what the garden gave us that morning —
+          and time to actually notice it.
         </p>
       </div>
     </SiteLayout>

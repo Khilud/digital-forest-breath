@@ -57,7 +57,7 @@ function ExperiencesPage() {
             the forest
           </h1>
           <p className="mt-6 max-w-xl text-base md:text-lg text-white/85 font-light fade-up-delay-2">
-            Seven curated paths between woodland, water and table — each shaped by the seasons of Sicily.
+            Seven ways to spend a day at the borgo — in the chestnut woods, at the table, in the spa, on the trails toward the sea.
           </p>
         </div>
       </section>

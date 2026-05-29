@@ -8,9 +8,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact & Book — Borgo Musolino" },
-      { name: "description", content: "Begin the journey. Tell us when you'd like to come and we'll craft an itinerary." },
+      { name: "description", content: "Plan your stay at Borgo Musolino — share your dates and we'll shape a Forest Resort Experience around them." },
       { property: "og:title", content: "Contact & Book — Borgo Musolino" },
-      { property: "og:description", content: "Plan your stay at Borgo Musolino." },
+      { property: "og:description", content: "Share your dates and we'll shape a Forest Resort Experience around them." },
       { property: "og:image", content: sunset },
     ],
   }),
