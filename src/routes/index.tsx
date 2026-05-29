@@ -12,14 +12,14 @@ import sunset from "@/assets/sunset.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Borgo Musolino — Forest Experience" },
+      { title: "Borgo Musolino — Forest Resort Experience" },
       {
         name: "description",
         content:
-          "Reconnect with nature through wellness and taste. An immersive Sicilian forest sanctuary in Messina — hospitality, spa, dining and curated experiences.",
+          "A sixteenth-century Sicilian borgo near Messina — rooms, spa, dining and curated forest experiences on fifty hectares above the Aeolian Islands.",
       },
-      { property: "og:title", content: "Borgo Musolino — Forest Experience" },
-      { property: "og:description", content: "Reconnect with nature through wellness and taste." },
+      { property: "og:title", content: "Borgo Musolino — Forest Resort Experience" },
+      { property: "og:description", content: "Rooms, spa, dining and curated forest experiences in a sixteenth-century Sicilian borgo." },
       { property: "og:image", content: heroForest },
     ],
   }),
@@ -63,7 +63,7 @@ function Index() {
             Forest
           </h1>
           <p className="mt-8 max-w-xl text-base md:text-lg text-white/85 font-light fade-up-delay-2">
-            An immersive sanctuary where wellness, taste and ancient woodland meet.
+            A sixteenth-century Sicilian borgo above the Aeolian Islands — rooms, spa, kitchen and fifty hectares of chestnut forest.
           </p>
           <Link
             to="/experiences"
@@ -91,10 +91,9 @@ function Index() {
             <span className="block font-script text-accent text-3xl md:text-5xl mt-3">through wellness &amp; taste</span>
           </h2>
           <p className="mt-10 text-white/75 leading-relaxed text-lg font-light">
-            <em className="text-accent">Digital Forest Breath</em> — the reciprocity between our
-            breath and the breath of trees. A place where ancient stones, immense
-            woodlands and refined Italian hospitality remind you that you are
-            embedded in nature's quiet, living web.
+            <em className="text-accent">Borgo Musolino · Forest Resort Experience</em> —
+            fifty hectares of Sicilian woodland, sixteenth-century stone and a restored
+            borgo where rest, food and the land are part of the same gesture.
           </p>
         </div>
       </section>
@@ -147,9 +146,9 @@ function Index() {
               <span className="block font-script text-accent text-3xl md:text-4xl mt-2">tenderly restored.</span>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed text-lg font-light">
-              Stone suites with forest views, a wood-clad spa, cedar tubs steaming
-              into the trees. Each room is a slow conversation between heritage and
-              comfort.
+              Stone suites with forest views, a wood-clad spa and cedar tubs steaming
+              into the trees. Each room is restored stone, linen and wood, opened
+              toward the trees.
             </p>
             <Link to="/stay" className="mt-10 inline-block border border-primary text-primary px-8 py-4 text-xs tracking-[0.3em] uppercase hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors">
               Discover the rooms
@@ -171,8 +170,8 @@ function Index() {
             the trees
           </h2>
           <p className="mt-6 text-white/80 font-light leading-relaxed text-lg">
-            Foraged herbs, ancestral grains, indigenous wines. A cuisine that
-            listens to the forest and the season.
+            Garden vegetables, ancient Sicilian grains, Faro and Etna wines. A
+            kitchen that cooks what the day brings in.
           </p>
           <Link to="/dining" className="mt-10 inline-block border border-accent text-accent px-8 py-4 text-xs tracking-[0.3em] uppercase hover:bg-accent hover:text-[oklch(0.18_0.03_150)] transition-colors">
             View Dining
@@ -191,8 +190,8 @@ function Index() {
               <span className="block font-script text-accent text-3xl md:text-5xl mt-2">the journey.</span>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed text-lg font-light">
-              Tell us when you'd like to come. We'll craft an itinerary tuned to
-              the forest's rhythm and your own.
+              Tell us your dates and how you like to travel. We'll put together a
+              stay around the rooms, the table and the experiences you want.
             </p>
             <Link to="/contact" className="mt-10 inline-block bg-primary text-primary-foreground px-10 py-4 text-xs tracking-[0.3em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors">
               Contact & Book
