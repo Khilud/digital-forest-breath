@@ -30,7 +30,7 @@ function DiningPage() {
       </section>
       <div className="mx-auto max-w-3xl px-6 py-24 text-center">
         <p className="text-lg text-muted-foreground leading-relaxed font-light">
-          At Borgo Musolino food is lived. Garden vegetables, honey from our bees and
+          At Borgo Musolino food is the point of the day. Garden vegetables, honey from our bees and
           ancient Sicilian grains, paired with Etna and Faro wines — a cuisine that
           listens to the forest and the sea.
         </p>
