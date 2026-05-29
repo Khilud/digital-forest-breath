@@ -9,7 +9,7 @@ export const Route = createFileRoute("/stay")({
       { title: "Stay — Borgo Musolino" },
       { name: "description", content: "Sea-view rooms, junior suites with terrace, forest-view rooms, garden suites and exclusive lodges in an ancient Sicilian borgo near Messina." },
       { property: "og:title", content: "Stay — Borgo Musolino" },
-      { property: "og:description", content: "Hospitality measured in breaths, not stars — between the Tyrrhenian and the Aeolian Islands." },
+      { property: "og:description", content: "Rooms, suites and lodges in a restored Sicilian borgo between the Tyrrhenian coast and the Aeolian Islands." },
       { property: "og:image", content: roomSuite },
     ],
   }),
@@ -17,8 +17,8 @@ export const Route = createFileRoute("/stay")({
 });
 
 const rooms = [
-  { img: roomClassic, name: "Forest Classic", blurb: "Warm stone walls and views of the chestnut canopy." },
-  { img: roomSuite, name: "Borgo Suite", blurb: "A private terrace, cedar tub and the song of the woodland at dusk." },
+  { img: roomClassic, name: "Forest Classic", blurb: "Stone walls, oak floors and a window onto the chestnut canopy." },
+  { img: roomSuite, name: "Borgo Suite", blurb: "Private terrace, cedar tub and the woods at eye level." },
 ];
 
 function StayPage() {
