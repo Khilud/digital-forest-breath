@@ -225,4 +225,15 @@
   .hover-zoom:hover img {
     transform: scale(1.06);
   }
+  .copy-body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.18rem;
+    line-height: 1.65;
+    color: oklch(0.35 0.03 145);
+    font-weight: 400;
+    letter-spacing: 0.005em;
+  }
+  @media (min-width: 768px) {
+    .copy-body { font-size: 1.25rem; }
+  }
 }

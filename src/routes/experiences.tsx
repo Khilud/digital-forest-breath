@@ -107,9 +107,7 @@ function ExperiencesPage() {
             </p>
             <span className="gold-line my-5 block" />
             <h2 className="font-serif text-4xl md:text-5xl text-primary">{active.title}</h2>
-            <p className="text-muted-foreground mt-5 max-w-2xl font-light text-lg leading-relaxed">
-              {active.intro}
-            </p>
+            <p className="copy-body mt-5 max-w-2xl">{active.intro}</p>
 
             <ul className="mt-12 space-y-6 pl-2 md:pl-4">
               {active.items.map((item, i) => (
@@ -124,7 +122,7 @@ function ExperiencesPage() {
                       <h3 className="font-serif text-2xl md:text-3xl text-primary group-hover:text-accent transition-colors">
                         {item.name}
                       </h3>
-                      <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{item.description}</p>
+                      <p className="copy-body mt-3">{item.description}</p>
                     </div>
                     <div className="md:col-span-3 text-sm tracking-[0.2em] uppercase text-muted-foreground">
                       {item.duration}
