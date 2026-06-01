@@ -74,7 +74,6 @@ function StayPage() {
             </div>
             <h2 className="font-serif text-3xl mt-6 text-primary">{r.name}</h2>
             <p className="eyebrow text-accent mt-3 text-[0.7rem]">{r.meta}</p>
-            <p className="copy-body mt-3">{r.blurb}</p>
           </article>
         ))}
       </div>
