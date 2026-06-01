@@ -17,8 +17,41 @@ export const Route = createFileRoute("/stay")({
 });
 
 const rooms = [
-  { img: roomClassic, name: "Forest Classic", blurb: "Stone walls, oak floors and a window onto the chestnut canopy." },
-  { img: roomSuite, name: "Borgo Suite", blurb: "Private terrace, cedar tub and the woods at eye level." },
+  {
+    img: roomSuite,
+    name: "Sea View Rooms",
+    meta: "Sleeps 2 · Tyrrhenian terrace",
+    blurb:
+      "Open your eyes and the first colour is blue. Wide terraces suspended over the Tyrrhenian, with Stromboli, Lipari and Vulcano on the horizon. At sunset the walls turn gold; at night, the stars settle on the water.",
+  },
+  {
+    img: roomSuite,
+    name: "Junior Suite with Terrace",
+    meta: "Sleeps 2 · Plunge pool · Hot tub",
+    blurb:
+      "Open-air living rooms, a private plunge pool and daybeds wrapped in silence. From the hot tub you watch the Aeolian Islands — and understand why Ulysses paused to listen.",
+  },
+  {
+    img: roomClassic,
+    name: "Forest View Rooms",
+    meta: "Sleeps 2 · Canopy windows",
+    blurb:
+      "You can hear the sea through the canopy, but never see it. Tall windows frame oaks, holm oaks and strawberry trees; sleep arrives with the owl, morning with sunlight through the branches.",
+  },
+  {
+    img: roomClassic,
+    name: "Garden Suites",
+    meta: "Sleeps 2–4 · Woodland hideaway",
+    blurb:
+      "Small houses hidden in the woods, scented with myrtle and reached by stone paths. Sleeps two or four, with sea-facing sunsets and fireflies for company.",
+  },
+  {
+    img: roomSuite,
+    name: "The Exclusive Lodges",
+    meta: "Sleeps 2 · Private mini-pool · Hammock",
+    blurb:
+      "The secret heart of the borgo. Wood-and-stone retreats beneath centuries-old camellias, citrus and pomegranate. A hammock, a glass of wine, a private mini-pool — and the forest, all yours.",
+  },
 ];
 
 function StayPage() {
@@ -40,7 +73,8 @@ function StayPage() {
               <img src={r.img} alt={r.name} loading="lazy" className="w-full h-full object-cover" />
             </div>
             <h2 className="font-serif text-3xl mt-6 text-primary">{r.name}</h2>
-            <p className="text-muted-foreground mt-3 leading-relaxed">{r.blurb}</p>
+            <p className="eyebrow text-accent mt-3 text-[0.7rem]">{r.meta}</p>
+            <p className="copy-body mt-3">{r.blurb}</p>
           </article>
         ))}
       </div>
