@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as StayRouteImport } from './routes/stay'
+import { Route as ReserveRouteImport } from './routes/reserve'
 import { Route as ExperiencesRouteImport } from './routes/experiences'
 import { Route as EventsRouteImport } from './routes/events'
 import { Route as DiningRouteImport } from './routes/dining'
@@ -20,6 +21,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const StayRoute = StayRouteImport.update({
   id: '/stay',
   path: '/stay',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReserveRoute = ReserveRouteImport.update({
+  id: '/reserve',
+  path: '/reserve',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExperiencesRoute = ExperiencesRouteImport.update({
@@ -60,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/dining': typeof DiningRoute
   '/events': typeof EventsRoute
   '/experiences': typeof ExperiencesRoute
+  '/reserve': typeof ReserveRoute
   '/stay': typeof StayRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +76,7 @@ export interface FileRoutesByTo {
   '/dining': typeof DiningRoute
   '/events': typeof EventsRoute
   '/experiences': typeof ExperiencesRoute
+  '/reserve': typeof ReserveRoute
   '/stay': typeof StayRoute
 }
 export interface FileRoutesById {
@@ -79,6 +87,7 @@ export interface FileRoutesById {
   '/dining': typeof DiningRoute
   '/events': typeof EventsRoute
   '/experiences': typeof ExperiencesRoute
+  '/reserve': typeof ReserveRoute
   '/stay': typeof StayRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +99,7 @@ export interface FileRouteTypes {
     | '/dining'
     | '/events'
     | '/experiences'
+    | '/reserve'
     | '/stay'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +109,7 @@ export interface FileRouteTypes {
     | '/dining'
     | '/events'
     | '/experiences'
+    | '/reserve'
     | '/stay'
   id:
     | '__root__'
@@ -108,6 +119,7 @@ export interface FileRouteTypes {
     | '/dining'
     | '/events'
     | '/experiences'
+    | '/reserve'
     | '/stay'
   fileRoutesById: FileRoutesById
 }
@@ -118,6 +130,7 @@ export interface RootRouteChildren {
   DiningRoute: typeof DiningRoute
   EventsRoute: typeof EventsRoute
   ExperiencesRoute: typeof ExperiencesRoute
+  ReserveRoute: typeof ReserveRoute
   StayRoute: typeof StayRoute
 }
 
@@ -128,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/stay'
       fullPath: '/stay'
       preLoaderRoute: typeof StayRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reserve': {
+      id: '/reserve'
+      path: '/reserve'
+      fullPath: '/reserve'
+      preLoaderRoute: typeof ReserveRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/experiences': {
@@ -182,6 +202,7 @@ const rootRouteChildren: RootRouteChildren = {
   DiningRoute: DiningRoute,
   EventsRoute: EventsRoute,
   ExperiencesRoute: ExperiencesRoute,
+  ReserveRoute: ReserveRoute,
   StayRoute: StayRoute,
 }
 export const routeTree = rootRouteImport
