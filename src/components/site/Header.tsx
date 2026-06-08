@@ -60,7 +60,7 @@ export function Header() {
             {lang}
           </button>
           <Link
-            to="/contact"
+            to="/reserve"
             className="border border-accent text-accent px-5 py-2 text-[0.85rem] tracking-[0.3em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors"
           >
             Book
